@@ -108,10 +108,30 @@ body.dark-mode #home {
     z-index: 0;
 }
 
+/* Hero sekcijos tekstas */
 #home .hero-content {
     z-index: 1;
     padding: 20px;
+    text-align: center;
 }
+
+/* Didelis ir išskirtinis tekstas */
+#home h1 {
+    font-size: 4rem; /* Didesnis šriftas */
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Šešėlis, kad tekstas būtų aiškesnis */
+    color: #fff; /* Užtikrina, kad tekstas bus baltas */
+}
+
+#home p {
+    font-size: 1.8rem; /* Didelis parašas */
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #fff; /* Užtikrina, kad parašas bus baltas */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Silpnesnis šešėlis */
+}
+
 
 /* Sekcijos fonai ir spalvos */
 section {
@@ -294,4 +314,14 @@ input[type="range"] {
 
 #scrollToTopBtn:hover {
     background-color: #555;
+}
+
+/* El. pašto nuorodos stilius */
+.email-link {
+    color: #333; /* Šviesiame režime nuoroda bus tamsi */
+    font-weight: bold;
+}
+
+body.dark-mode .email-link {
+    color: #fff; /* Tamsiame režime nuoroda bus balta */
 }
