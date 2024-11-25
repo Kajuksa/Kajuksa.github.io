@@ -2,49 +2,226 @@
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Asmeninė svetainė su Apie skiltimi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asmeninė svetainė – Kajus Misevičius">
     <link rel="stylesheet" href="styles.css">
-    <title>2 Laboratorinis Darbas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Kajus Misevičius</title>
 </head>
 <body>
 
-    <h1>Kajus Misevičius EDif23/2</h1>
+<!-- Navigacija -->
+<nav id="navmenu">
+    <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul id="nav-links">
+        <li><a href="#home">Pradžia</a></li>
+        <li><a href="#about">Apie mane</a></li>
+        <li><a href="#experience">Darbo patirtis</a></li>
+        <li><a href="#education">Išsilavinimas</a></li>
+        <li><a href="#skills">Įgūdžiai</a></li>
+        <li><a href="#projects">Projektai</a></li>
+        <li><a href="#hobbies">Laisvalaikio pomėgiai</a></li>
+        <li><a href="#contact">Kontaktai</a></li>
+    </ul>
+</nav>
 
-<section id="about">
-    <h2>Apie Mane</h2>
-    <p>Esu studentas, kurianti asmeninę svetainę naudojant Bootstrap šabloną. Šioje svetainėje pristatysiu savo profesinius pasiekimus ir pomėgius.</p>
-</section>
+<!-- Audio Player su valdymo mygtukais ir režimo pasirinkimu -->
+<div class="audio-player">
+    <audio id="background-music" autoplay loop>
+        <source src="Audio/SedajaNoch.mp3" type="audio/mp3">
+        Jūsų naršyklė nepalaiko audio formato.
+    </audio>
+    <div class="controls">
+        <button id="playPauseBtn">Paleisti</button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+        <label for="volumeControl">Garsas</label>
+        <button id="modeToggleBtn">Tamsus Režimas</button>
+    </div>
+</div>
 
-<section id="resume">
-    <h2>Aprašymas</h2>
-    <p>Mokausi: Vilnius Tech Universitete</p>
-    <p>Darbo patirtis: virtuves šefas</p>
-    <p>Mano įgūdžiai: Iš  triju kotletu padaryti maisto 6 asmenų grupei</p>
-</section>
-
-<section id="portfolio">
-    <h2>Aš</h2>
-    <div class="portfolio-item">
-        <img src="Photos\DSCF0645.JPG" alt="aš" width="200" height="200">
-        <p>Aš</p>
+<!-- Hero sekcija -->
+<section id="home">
+    <div class="hero-content">
+        <h1>Kajus Misevičius</h1>
+        <p>Esu studentas, IT entuziastas ir inovatyvių sprendimų kūrėjas.</p>
     </div>
 </section>
 
-<section id="services">
-    <h2>Paslaugos</h2>
-
-    <h3>Video</h3>
-    <video width="320" height="240" controls>
-        <source src="Videos/Polish cow (English Lyrics Full Version).mp4" type="video/mp4">
-    </video>
-
-    <h3>Video is Youtube</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XcXH_RKUJN0?si=eiKuP3ktcCXxEeN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    <h3>Garso įrašas</h3>
-    <audio controls>
-        <source src="Audio/SedajaNoch.mp3" type="audio/mp3">
-    </audio>
+<!-- Apie mane -->
+<section id="about">
+    <div class="container">
+        <h2>Apie mane</h2>
+        <p>Gimimo data: 2004.01.04 (20 m.)</p>
+        <p>Miestas: Panevėžys</p>
+        <p>Telefonas: +37060255496</p>
+        <p>El. paštas: <a href="mailto:kajuksa10@gmail.com" class="email-link">kajuksa10@gmail.com</a></p>
+        <p>Esu antrame kurse studijuojantis dirbtinio intelekto sistemas VGTU. Esu darbštus, atsakingas ir greitai mokausi. Greitai reaguoju į netikėtumus ir racionaliai priemu sprendimus. Turiu gerus analitinius įgūdžius ir gebu greitai įsisavinti informaciją. Mokausi C ir Python kalbų, dirbu su AutoCAD, taip pat turiu B kategorijos teises.</p>
+    </div>
 </section>
 
+<!-- Darbo patirtis -->
+<section id="experience">
+    <div class="container">
+        <h2>Darbo patirtis</h2>
+        <ul>
+            <li><strong>2024.06 - 2024.07:</strong> UAB "Sporto Lizdas" – Virėjas/konditeris</li>
+            <li><strong>2023.06 - 2023.08:</strong> UAB "Pieno Žvaigždės" – Pakuotojas</li>
+            <li><strong>2023.01 - 2023.03:</strong> VRK – Vyriausiosios rinkimų komisijos narys</li>
+            <li><strong>2022.06 - 2022.09:</strong> TopPizza – Vairuotojas</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Išsilavinimas -->
+<section id="education">
+    <div class="container">
+        <h2>Išsilavinimas</h2>
+        <ul>
+            <li><strong>2023 - dabar:</strong> Vilniaus Gedimino technikos universitetas, dirbtinio intelekto sistemos, bakalauras</li>
+            <li><strong>2019 - 2023:</strong> Panevėžio Juozo Balčikonio Gimnazija, vidurinis išsilavinimas</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Įgūdžiai -->
+<section id="skills">
+    <div class="container">
+        <h2>Įgūdžiai</h2>
+        <ul>
+            <li><strong>Kalbos:</strong> Anglų kalba: Gerai kalbu, puikiai suprantu, gerai rašau</li>
+            <li><strong>Programavimo kalbos:</strong> C, Python, C++</li>
+            <li><strong>Kompiuterinės žinios:</strong> Excel, PowerPoint, Word, AutoCAD (pažengęs), Python (objektinis programavimas), C++ (mokausi)</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Projektai -->
+<section id="projects">
+    <h2>Projektai</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/XcXH_RKUJN0?si=eiKuP3ktcCXxEeN0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <h3>Projektas 1</h3>
+            <p>Mano „YouTube“ video.</p>
+        </div>
+
+        <div class="portfolio-item">
+            <video width="100%" height="200" controls>
+                <source src="Videos/Polish cow (English Lyrics Full Version).mp4" type="video/mp4">
+                Jūsų naršyklė nepalaiko vaizdo formato.
+            </video>
+            <h3>Projektas 2</h3>
+            <p>Vietinis vaizdo įrašas.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Laisvalaikio pomėgiai -->
+<section id="hobbies">
+    <div class="container">
+        <h2>Laisvalaikio pomėgiai</h2>
+        <ul>
+            <li><strong>Laiko valdymas:</strong> Reguliarus dalyvavimas sporto klubo veikloje išmokė mane efektyviai planuoti laiką ir derinti sportą su kitais įsipareigojimais.</li>
+            <li><strong>Disciplinos ir atkaklumo ugdymas:</strong> Intensyvios treniruotės sporto klube padėjo man ugdyti discipliną ir atkaklumą, kurie svarbūs siekiant asmeninių ir profesinių tikslų.</li>
+            <li><strong>Sveikos gyvensenos skatinimas:</strong> Sporto klube įgyti įpročiai ir žinios apie sveiką gyvenseną padeda man palaikyti gerą fizinę ir psichologinę būklę, kas prisideda prie darbingumo.</li>
+            <li><strong>Bendravimo įgūdžiai:</strong> Sporto klube įgijau vertingų bendravimo įgūdžių, kurie padeda man geriau suprasti ir bendrauti su kolegomis darbe.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Kontaktai -->
+<section id="contact">
+    <div class="container">
+        <h2>Kontaktai</h2>
+        <p>El. paštas: <a href="mailto:kajuksa10@gmail.com" class="email-link">kajuksa10@gmail.com</a><br>
+           Telefonas: +37060255496</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Kajus Misevičius. Visos teisės saugomos.</p>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Grįžti į viršų">↑</button>
+
+<script>
+
+        // Funkcija, kuri sustabdo muziką, jei ji jau groja
+        const playPauseBtn = document.getElementById('playPauseBtn');
+    const audio = document.getElementById('background-music');
+    const volumeControl = document.getElementById('volumeControl');
+    const modeToggleBtn = document.getElementById('modeToggleBtn');
+    const body = document.body;
+
+    // Patikrinti, kuris režimas aktyvus, ir nustatyti jį
+    if (localStorage.getItem('mode') === 'dark') {
+        body.classList.add('dark-mode');
+        modeToggleBtn.textContent = 'Šviesus Režimas';
+    } else {
+        body.classList.remove('dark-mode');
+        modeToggleBtn.textContent = 'Tamsus Režimas';
+    }
+
+    // Klausytis mygtuko paspaudimo, kad pereitumėte tarp režimų
+    modeToggleBtn.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+            body.classList.remove('dark-mode');
+            modeToggleBtn.textContent = 'Tamsus Režimas';
+            localStorage.setItem('mode', 'light');
+        } else {
+            body.classList.add('dark-mode');
+            modeToggleBtn.textContent = 'Šviesus Režimas';
+            localStorage.setItem('mode', 'dark');
+        }
+    });
+
+    // Funkcija muzikos paleidimui ir sustabdymui
+    playPauseBtn.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            playPauseBtn.textContent = 'Sustabdyti';
+        } else {
+            audio.pause();
+            playPauseBtn.textContent = 'Paleisti';
+        }
+    });
+
+    // Garsumo reguliavimas
+    volumeControl.addEventListener('input', (event) => {
+        audio.volume = event.target.value;
+    });
+
+    // Hamburger meniu logika
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Scroll-to-Top mygtuko funkcionalumas
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
 
 </body>
 </html>
