@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Kajus Misevičius</title>
+    <script type="text/javascript" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
 </head>
 <body>
 
@@ -133,6 +136,41 @@
     </div>
 </section>
 
+<!-- Matematine israiska -->
+<h1>Matematinė išraiška</h1>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mfrac>
+            <mn>1</mn>
+            <mrow>
+                <mn>2</mn>
+                <mi>π</mi>
+                <mi>i</mi>
+            </mrow>
+        </mfrac>
+        <mo>∮</mo> <mfrac> <mrow> <mi>f</mi> <mo stretchy="false">(</mo> <mi>z</mi> <mo stretchy="false">)</mo> </mrow> <mrow> <mi>z</mi> <mo>−</mo> <mi>a</mi> </mrow> </mfrac> <mi>d</mi><mi>z</mi>
+    </mrow>
+</math>
+
+<!-- svg -->
+
+<p>SVG</p>
+
+<svg width="150" height="150">
+  <circle cx="75" cy="75" r="60" stroke="blue" stroke-width="5" fill="lightgreen" />
+</svg>
+
+<!-- Laikrodukas -->
+
+<p>Laikrodukas:</p>
+<div id="clock"></div>
+
 <!-- Kontaktai -->
 <section id="contact">
     <div class="container">
@@ -152,7 +190,7 @@
 <script>
 
         // Funkcija, kuri sustabdo muziką, jei ji jau groja
-        const playPauseBtn = document.getElementById('playPauseBtn');
+    const playPauseBtn = document.getElementById('playPauseBtn');
     const audio = document.getElementById('background-music');
     const volumeControl = document.getElementById('volumeControl');
     const modeToggleBtn = document.getElementById('modeToggleBtn');
@@ -221,6 +259,14 @@
             behavior: "smooth"
         });
     });
+
+    function updateClock() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString(); // Simplesnis formatavimas
+      document.getElementById("clock").textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
 </script>
 
 </body>
