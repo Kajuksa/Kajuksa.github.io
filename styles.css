@@ -315,3 +315,21 @@ input[type="range"] {
 #scrollToTopBtn:hover {
     background-color: #555;
 }
+
+/* El. pašto nuorodos stilius */
+.email-link {
+    color: #333; /* Šviesiame režime nuoroda bus tamsi */
+    font-weight: bold;
+}
+
+body.dark-mode .email-link {
+    color: #fff; /* Tamsiame režime nuoroda bus balta */
+}
+
+#clock {
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 20px;
+  }
+  
